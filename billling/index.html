@@ -27,7 +27,8 @@
 				float price = rs.getFloat("price");
 		%>
 			<label for="<%= name %>"><%= name %></label>
-			<input type="checkbox" name="item[]" value="<%= price %>" id="<%= name %>">
+			<input type="text" name="item[<%= name %>]" placeholder="Enter quantity">
+			<input type="hidden" name="price[<%= name %>]" value="<%= price %>">
 		<%
 			}
 		%>
